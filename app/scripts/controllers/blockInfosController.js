@@ -97,7 +97,7 @@ angular.module('ethExplorer')
                 from: result.from,
                 to: result.to,
                 gas: result.gas,
-                input: result.input,
+                input: hex2a(result.input),
                 value: result.value
               }
               $scope.$apply(
